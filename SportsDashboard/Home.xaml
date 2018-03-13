@@ -1,0 +1,122 @@
+﻿<Page x:Class="SportsDashboard.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SportsDashboard"
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1366" MinWidth="960" MinHeight="540"
+      Title="Home">
+
+    <Border Background="{StaticResource WhiteBackgroundBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>                
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions>
+
+            <Frame Grid.Column="1" Grid.Row="1" x:Name="MainFrame" Background="{StaticResource LightGreyBackgroundBrush}"/>
+
+            <Border Grid.ColumnSpan="2" Background= "{StaticResource TwitchLightPurpleBrush}">
+
+                <Grid>
+                    
+                </Grid>
+
+            </Border>
+            
+          <!--Sidebar-->
+           
+            <StackPanel Grid.Column ="0" Grid.Row="1" Background="{StaticResource TwitchDeepPurpleBrush }">
+                <Label Content="OVERWATCH LEAGUE" FontFamily="Candara"  FontSize="16" Foreground="{StaticResource GreyBackgroundBrush}" 
+                       Margin="0,20,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <DockPanel Margin="0,10,0,10" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Image Source="Images/ValiantIcon.PNG" Height="35" Width="35"/>
+
+                        <Label Content="LA Valiant" FontFamily="Candara"  FontSize="16" VerticalAlignment="Center" Foreground="White" Margin="5,0,10,0"/>
+                    </DockPanel>
+                
+
+                <Button Background="Transparent" BorderThickness="0" Click="Button_Click" Margin="0,10,0,0" HorizontalContentAlignment="Left">
+                        <Label Content="Roster" FontFamily="Candara"  FontSize="16" Foreground="White" Margin="70,0,10,0"/>
+                </Button>
+                <Button Background="Transparent" BorderThickness="0" Click="Button_Click" Margin="0,10,0,0" HorizontalContentAlignment="Left">
+                        <Label Content="Schedule" FontFamily="Candara"  FontSize="16" Foreground="White" Margin="70,0,10,0"/>
+                </Button>
+                <Button Background="Transparent" BorderThickness="0" Click="Button_Click" Margin="0,10,0,0" HorizontalContentAlignment="Left">
+                        <Label Content="Videos" FontFamily="Candara"  FontSize="16" Foreground="White" Margin="70,0,10,0"/>
+                </Button>
+                
+
+
+
+
+
+
+
+
+
+
+                <Button Background="Transparent" BorderThickness="0" Click="Button_Click_1">
+                <DockPanel Margin="0,10,5,10" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="Images/FuelIcon.PNG" Height="35" Width="35"/>
+                    <Label Content="Dallas Fuel" FontFamily="Candara" FontSize="16" VerticalAlignment="Center" Foreground="White" Margin="10,0,10,0"/>                                    
+                </DockPanel>
+                </Button>
+
+                <Button Background="Transparent" BorderThickness="0" Click="Button_Click_2">
+                <DockPanel Margin="20,10,0,10" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="Images/DynastyIcon.PNG" Height="35" Width="35"/>
+                    <Label Content="Seoul Dynasty" FontFamily="Candara" FontSize="16" VerticalAlignment="Center" Foreground="White" Margin="10,0,10,0"/>
+                </DockPanel>
+                </Button>
+
+                <Label Content="PREMIER LEAGUE" FontFamily="Candara"  FontSize="16" Foreground="{StaticResource GreyBackgroundBrush}"
+                        Margin="0,30,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                <Button Background="Transparent" BorderThickness="0" Click="Button_Click_3" Margin="0,10,0,0">
+                <DockPanel Margin="5,10,0,10" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="Images/LiverpoolIcon.PNG" Height="35" Width="35"/>
+                    <Label Content="Liverpool FC" FontFamily="Candara" FontSize="16" VerticalAlignment="Center" Foreground="White" Margin="5,0,10,0"/>
+                </DockPanel>
+                </Button>
+
+                <Label Content="MAJOR LEAGUE SOCCER" FontFamily="Candara"  FontSize="16" Foreground="{StaticResource GreyBackgroundBrush}"
+                        Margin="0,30,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                
+                <Button Background="Transparent" BorderThickness="0" Click="Button_Click_4" Margin="0,10,0,0">
+                <DockPanel Margin="5,10,0,10" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="Images/TorontoFCLogo.PNG" Height="35" Width="35"/>
+                    <Label Content="Toronto FC" FontFamily="Candara" FontSize="16" VerticalAlignment="Center" Foreground="White" Margin="10,0,10,0"/>
+                </DockPanel>
+                </Button>
+
+
+            </StackPanel>
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </Grid>
+    </Border>
+
+</Page>
